@@ -162,7 +162,7 @@ def is_birth(df):
     birth = df['Birth Year']
     return 'Earliest Birth: {}\nMost Recent: {}\nMost Common Year: {}'.format(birth.min(),birth.max(),birth.mode().iloc[0])
 
-
+#This function asks users if they want to see raw data
 def raw_data(df):
     while True:
         n = input('Would you like to see raw data?(yes/no)')
