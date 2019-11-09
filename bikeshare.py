@@ -1,7 +1,7 @@
 import time
 import pandas as pd
 import numpy as np
-
+#Make sure csv files are in same folder
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -153,7 +153,7 @@ def user_stats(df):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-
+#This function is to consolidate the gender function
 def is_gender(df):
     gender_count = df['Gender'].value_counts()
     return gender_count
