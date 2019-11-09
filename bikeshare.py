@@ -171,7 +171,7 @@ def raw_data(df):
             print(df.head(rows+1))
         elif n.lower() == 'no':
             break
-
+#In main function there is while function to restart program
 def main():
     while True:
         city, month, day = get_filters()
